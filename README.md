@@ -41,10 +41,10 @@ The project consists of several key classes:
 
 1. Clone the repository
    ```bash
-    git clone [https://github.com/yourusername/bank-management-system.git](https://github.com/yourusername/bank-management-system.git)
+    git clone [https://github.com/tamires-manhaes/banco-digital-java-poo.git](https://github.com/tamires-manhaes/banco-digital-java-poo.git)
 2. Navigate to the project directory
     ```bash
-    cd bank-management-system
+    cd banco-digital-java-poo
 3. Compile the project
     ```bash
     javac *.java
