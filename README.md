@@ -62,7 +62,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
     5. Open a Pull Request
 
 ## Author
-    Tamires Pimenta - [GitHub Profile](https://github.com/tamires-manhaes)
+Tamires Pimenta - [GitHub Profile](https://github.com/tamires-manhaes)
 
 ## Acknowledgments
 - Inspired by DIO Challenge
