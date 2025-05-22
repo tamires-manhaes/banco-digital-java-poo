@@ -2,19 +2,22 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
   public static void main(String[] args) {
-    Cliente eu = new Cliente();
-    Cliente outro = new Cliente();
-    outro.setNome("Outro");
-    eu.setNome("Tamires");
+    Banco banco = new Banco("Banco de Tamires");
+    Cliente cliente = new Cliente("Tamires", "123.456.789-00", "tamires@email.com");
+    Cliente outroCliente = new Cliente("Maic", "123.465.645-99", "maic@email.com");
 
-    Conta contaCorrente = new ContaCorrente(eu);
-    contaCorrente.depositar(200);
-    Conta contaPoupanca = new ContaPoupanca(outro);
-    contaPoupanca.depositar(250);
+    Conta contaCorrente = new ContaCorrente(cliente);
+    Conta contaPoupanca = new ContaPoupanca(outroCliente);
 
-    contaPoupanca.transferir(contaCorrente, 100);
+    banco.addConta(contaCorrente);
+    banco.addConta(contaPoupanca);
 
-   contaCorrente.imprimirExtrato();
-   contaPoupanca.imprimirExtrato();
+    contaCorrente.depositar(1200);
+    contaPoupanca.depositar(1250);
+
+    contaPoupanca.transferir(contaCorrente, 50);
+
+    contaCorrente.imprimirExtrato();
+    contaPoupanca.imprimirExtrato();
   }
 }
